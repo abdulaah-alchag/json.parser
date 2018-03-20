@@ -1,0 +1,91 @@
+{
+  "basics": {
+    "name": "ABDULAAH AL CHAGHOURI",
+    "picture": "http://localhost/json-parser/assets/images/profile.png",
+    "label": "Web Developer",
+    "email": "abdulaah.alchaghouri@gmail.com",
+    "phone": "+60 11-399 55543",
+    "summary": "Following a return through the Malaysian job market, Looking for a rewarding new position in IT field, where skills, knowledge and expertise gained throughout experience to date can be applied and further professional development achieved.",
+    "location": {
+      "address": "Serin Residency",
+      "postalCode": "63000",
+      "city": "Cyberjaya",
+      "state": "Selangor"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "abdulaah al chaghouri",
+        "url": "https://www.linkedin.com/in/abdulaah-al-chaghouri-67914b134/"
+      },
+      {
+        "network": "Github",
+        "username": "abdulaah-alchag",
+        "url": "https://github.com/abdulaah-alchag"
+      }
+    ]
+  },
+  "education background": 
+  {
+    "institution": "Limkokwing University of Creative Technology",
+    "area": "Information Technology",
+    "studyType": "Bachelor",
+    "startDate": "AUG-2013",
+    "endDate": "JUL-2016"
+  },
+  "work experience": {
+    "company": "Xentral Methods",
+    "position": "Full-Stack Web App Developer",
+    "website": "http://www.xentralmethods.com/",
+    "startDate": "05-2017",
+    "endDate": "01-2018",
+    "summary": "Overall responsibility for the company's web development strategy",
+    "highlights": [
+      "NDTP manage projects of digital textbooks, timelines, authoring tools and repository. the scripting language is PHP using Codeigniter framework, Javascript. The database is MySql. AWS, API, MVC and Git"
+    ]
+  },
+  "proficiency": [
+    {
+      "name": "HTML/CSS",
+      "level": ""
+    },
+    {
+      "name": "JavaScript",
+      "level": ""
+    },
+    {
+      "name": "SQL",
+      "level": ""
+    },
+    {
+      "name": "PHP",
+      "level": ""
+    },
+    {
+      "name": "Git",
+      "level": ""
+    }
+  ],
+ "personal skills": {
+    "Creative Idea":"",
+    "Innovate":"",
+    "Team Work":"",
+    "Communication":"",
+    "IT Analysis":""
+  },
+  "languages": [
+    {
+    "name": "Arabic",
+    "level": "Native speaker"
+    },
+    {
+    "name": "English",
+    "level": "Upper Intermidiate"
+    }
+  ],
+  "references": {
+    "name": "Faiz Al-Shahab",
+    "reference": "Director at Xentral Methods Sdn Bhd",
+    "contact" : "+60 12-644 1230"
+  }
+}
