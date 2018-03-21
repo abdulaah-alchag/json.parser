@@ -14,18 +14,18 @@
     },
     "profiles": [
       {
-        "network": "LinkedIn",
+        "network": "Linkedin",
         "username": "abdulaah al chaghouri",
-        "url": "https://www.linkedin.com/in/abdulaah-al-chaghouri-67914b134/"
+        "url": "linkedin.com/in/abdulaah-al-chaghouri/"
       },
       {
         "network": "Github",
         "username": "abdulaah-alchag",
-        "url": "https://github.com/abdulaah-alchag"
+        "url": "github.com/abdulaah-alchag"
       }
     ]
   },
-  "education background": 
+  "education": 
   {
     "institution": "Limkokwing University of Creative Technology",
     "area": "Information Technology",
@@ -33,7 +33,7 @@
     "startDate": "AUG-2013",
     "endDate": "JUL-2016"
   },
-  "work experience": {
+  "work": {
     "company": "Xentral Methods",
     "position": "Full-Stack Web App Developer",
     "website": "http://www.xentralmethods.com/",
@@ -80,7 +80,7 @@
     },
     {
     "name": "English",
-    "level": "Upper Intermidiate"
+    "level": "Professional"
     }
   ],
   "references": {

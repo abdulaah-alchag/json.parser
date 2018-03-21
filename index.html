@@ -31,12 +31,10 @@
             
             <div class="contact-container container-block">
                 <ul class="list-unstyled contact-list">
-                   <!--  <li class="email"><i class="fa fa-envelope"></i><a href="mailto: yourname@email.com">alan.doe@website.com</a></li>
+                    <li class="email"><i class="fa fa-envelope"></i><a href="mailto: yourname@email.com">alan.doe@website.com</a></li>
                     <li class="phone"><i class="fa fa-phone"></i><a href="tel:0123 456 789">0123 456 789</a></li>
-                    <li class="website"><i class="fa fa-globe"></i><a href="http://themes.3rdwavemedia.com/website-templates/free-responsive-website-template-for-developers/" target="_blank">portfoliosite.com</a></li>
-                    <li class="linkedin"><i class="fa fa-linkedin"></i><a href="#" target="_blank">linkedin.com/in/alandoe</a></li>
-                    <li class="github"><i class="fa fa-github"></i><a href="#" target="_blank">github.com/username</a></li>
-                    <li class="twitter"><i class="fa fa-twitter"></i><a href="https://twitter.com/3rdwave_themes" target="_blank">@twittername</a></li> -->
+                    <li class="linkedin"><a href="#" target="_blank">linkedin.com/in/abdulaah-al-chaghouri</a></li>
+                    <li class="github"><a href="#" target="_blank">github.com/abdulaah-alchag</a></li>
                 </ul>
             </div><!--//contact-container-->
             <div class="education-container container-block">
@@ -46,11 +44,6 @@
                     <h5 class="meta">Limkokwing University</h5>
                     <div class="time">2013 - 2016</div>
                 </div><!--//item-->
-                <div class="item">
-                    <h4 class="degree">Scientific Baccalaureate</h4>
-                    <h5 class="meta">Al Muhsineea College</h5>
-                    <div class="time">2012</div>
-                </div><!--//item-->
             </div><!--//education-container-->
             
             <div class="languages-container container-block">
@@ -58,18 +51,7 @@
                 <ul class="list-unstyled interests-list">
                     <li>Arabic <span class="lang-desc">(Native)</span></li>
                     <li>English <span class="lang-desc">(Professional)</span></li>
-                    <li>French <span class="lang-desc">(Beginner)</span></li>
-                    
-                </ul>
-            </div><!--//interests-->
-            
-            <div class="interests-container container-block">
-                <h2 class="container-block-title">Skills</h2>
-                <ul class="list-unstyled interests-list">
-                    <li>Creative Ideas</li>
-                    <li>Communication</li>
-                    <li>Team work</li>
-                    <li>Analysis</li>
+   
                 </ul>
             </div><!--//interests-->
             
@@ -88,7 +70,7 @@
                 <h2 class="section-title"><i class="fa fa-briefcase"></i>Experiences</h2>
                 
                 <div class="item">
-                    <div class="meta">
+                    <div class="meta1">
                         <div class="upper-row">
                             <h3 class="job-title">Web Developer</h3>
                             <div class="time">MAY 2017 - Present</div>
@@ -102,7 +84,7 @@
                 </div><!--//item-->
                 
                 <div class="item">
-                    <div class="meta">
+                    <div class="meta2">
                         <div class="upper-row">
                             <h3 class="job-title">Drive Testing Engineer | Internship</h3>
                             <div class="time">2015 - 2016</div>
@@ -181,28 +163,41 @@
     <script>
 
     $.getJSON("resume.json", function (data) {
+        //Get JSON data using an AJAX request, and output the result
         $.each(data, function (index, value) {
-        console.log(value);
-        
+            console.log(value);
         });
-        console.log(data.basics.name);
-
-
-        console.log(data.basics.contact);
 
         $(".profile").attr("src",data.basics.picture);
         $(".name").html(data.basics.name); 
         $(".tagline").html(data.basics.label);
-        $(".summary").html(data.basics.summary); 
+        $(".summary").html(data.basics.summary);
+        $(".email").html(data.basics.email);
+        $(".phone").html(data.basics.phone);
 
-        $.each(data.basics.contact, function (i, email) {
-            var option_cate = ('<i class="fa fa-envelope">' + email + '</li>');
-            // $("ul.list-unstyled contact-list").append('<li class="email"><i class="fa fa-envelope"></i><a href="mailto: yourname@email.com">alan.doe@website.com</a></li>');
+        $(".linkedin").html(data.basics.profiles.url);
+        console.log(data.basics.profiles.url);
+        $(".phone").html(data.basics.phone); 
+
+        $(".degree").html(data.education.institution);
+        $(".meta").html(data.education.area); 
+        $(".time").html(data.education.startDate+' '+data.education.endDate);  
+
+        data.proficiency.forEach(function(w) {
+            console.log(w.name);
+            $("level-title").html(w.name);
+
+        });
+
+        $.each(data.basics.profiles, function (index, item) {
+            
+            var option_cate = ('<li>'+item.network+'</li>');
+            $("ul.list-unstyled contact-list").append(option_cate);
         });
 
 
-
     });
+
     </script>
 </body>
 </html> 
